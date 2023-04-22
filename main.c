@@ -7,6 +7,7 @@
 #include "dice.h"
 #include "calc.h"
 #include "histogram.h"
+#include "sizes.h"
 
 int help(void)
 {
@@ -16,6 +17,7 @@ int help(void)
 	printf("- calc\n");
 	printf("- dice\n");
 	printf("- histogram\n");
+	printf("- sizes\n");
 	printf("- help\n");
 	printf("\n");
 	return 0;
@@ -46,6 +48,8 @@ int main(void)
 			dice();
 		if (strcmp(option, "histogram") == 0)
 			histogram();
+		if (strcmp(option, "sizes") == 0)
+			sizes();
 		if (strcmp(option, "help") == 0)
 			help();
 
